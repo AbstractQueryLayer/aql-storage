@@ -1,7 +1,12 @@
 {
   "name": "ifcastle/aql-storage",
   "description": "Storage contracts for Abstract Query Language",
-  "keywords": ["aql", "query", "language", "storage"],
+  "keywords": [
+    "aql",
+    "query",
+    "language",
+    "storage"
+  ],
   "type": "ifcastle-aql-package",
   "license": "MIT",
   "authors": [
@@ -11,11 +16,17 @@
     }
   ],
   "require": {
-    "php": ">=8.4"
+    "php": ">=8.4",
+    "ifcastle/aql-dsl": "^0.1.0",
+    "ifcastle/aql-result": "^0.1.0",
+    "ifcastle/di": "^0.6.0",
+    "ifcastle/exceptions": "^5.0"
   },
   "autoload": {
     "psr-4": {
-      "IfCastle\\AQL\\Storage\\": ["src/"]
+      "IfCastle\\AQL\\Storage\\": [
+        "src/"
+      ]
     }
   },
   "autoload-dev": {
